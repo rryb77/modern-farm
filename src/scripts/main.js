@@ -9,6 +9,10 @@ import { createSoybean } from './seeds/soybean.js'
 import { createSunflower } from './seeds/sunflower.js'
 import { createWheat } from './seeds/wheat.js'
 
+// import functions from field.js
+import { addPlant } from './field.js'
+import { usePlants } from './field.js'
+
 // call functions
 createPlan()
 const yearlyPlan = createPlan()
@@ -31,3 +35,8 @@ console.log(sunflowerSeed)
 
 const wheatSeed = createWheat()
 console.log(wheatSeed)
+
+// testing Tilling the Field
+addPlant(asparagusSeed)
+let plantLife = usePlants()
+console.log(plantLife)
