@@ -9,6 +9,8 @@ import { usePlants } from './field.js'
 import { plantSeeds } from './tractor.js'
 import { harvestPlants } from './harvester.js'
 
+import { Catalog } from './catalog.js'
+
 // call functions
 const yearlyPlan = createPlan()
 
@@ -18,5 +20,7 @@ const plantedSeeds = usePlants()
 console.log('Testing plantSeeds from tractor.js', plantedSeeds)
 
 // testing harvester.js
-const testHarvest = harvestPlants(plantedSeeds)
-console.log('Looking for harvest array from harvester.js', testHarvest)
+const theHarvest = harvestPlants(plantedSeeds)
+console.log('Looking for harvest array from harvester.js', theHarvest)
+
+Catalog(theHarvest)
