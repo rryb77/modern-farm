@@ -15,44 +15,38 @@ export const plantSeeds = (plan) => {
     for (let i = 0; i < plan.length; i++) {
         // loop through each item in each array
         for (let plant of plan[i]) {
-            // testing loop of each item in each array
-            // console.log(plant)
-            // let seed:
+
+            // define 'let seed;' with no value outside the switch statement
+            let seed;
             // switch statement to invoke the proper creation of each seed in the array
             switch (plant) {
 
                 case 'Asparagus':
-                    const asparagusSeed = createAsparagus()
-                    addPlant(asparagusSeed)
+                    seed = createAsparagus()
                     break;
 
                 case 'Corn':
-                    const cornSeed = createCorn()
-                    addPlant(cornSeed)
+                    seed = createCorn()
                     break;
                     
                 case 'Potato':
-                    const potatoSeed = createPotato()
-                    addPlant(potatoSeed)
+                    seed = createPotato()
                     break;
 
                 case 'Soybean':
-                    const soybeanSeed = createSoybean()
-                    addPlant(soybeanSeed)
+                    seed = createSoybean()
                     break;
                     
                 case 'Sunflower':
-                    const sunflowerSeed = createSunflower()
-                    addPlant(sunflowerSeed)
+                    seed = createSunflower()
                     break;
 
                 case 'Wheat':
-                    const wheatSeed = createWheat()
-                    addPlant(wheatSeed)
-                    break;
-                    
+                    seed = createWheat()
+                    break;                    
             }
-            //addPlant(seed)
+            // seed is properly set to createAsparagus etc because it's set outside, assigned inside, then breaks out each loop
+            addPlant(seed)
         }
         // testing loop of arrays
         // console.log(plan[i]);
