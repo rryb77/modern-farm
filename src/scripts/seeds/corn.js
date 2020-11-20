@@ -1,3 +1,4 @@
+// Create the seed array of objects
 const cornArray = [
     {
         type: "Corn",

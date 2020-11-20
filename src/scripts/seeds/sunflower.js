@@ -1,3 +1,4 @@
+// Create the seed object
 export const createSunflower = () => {
     const seed = {
         type: "Sunflower",

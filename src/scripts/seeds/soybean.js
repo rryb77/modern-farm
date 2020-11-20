@@ -1,3 +1,4 @@
+// Create the seed object
 export const createSoybean = () => {
     const seed = {
         type: "Soybean",
