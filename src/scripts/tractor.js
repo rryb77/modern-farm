@@ -17,28 +17,42 @@ export const plantSeeds = (plan) => {
         for (let plant of plan[i]) {
             // testing loop of each item in each array
             // console.log(plant)
-
+            // let seed:
             // switch statement to invoke the proper creation of each seed in the array
             switch (plant) {
+
                 case 'Asparagus':
                     const asparagusSeed = createAsparagus()
                     addPlant(asparagusSeed)
+                    break;
+
                 case 'Corn':
                     const cornSeed = createCorn()
                     addPlant(cornSeed)
+                    break;
+                    
                 case 'Potato':
                     const potatoSeed = createPotato()
                     addPlant(potatoSeed)
+                    break;
+
                 case 'Soybean':
                     const soybeanSeed = createSoybean()
                     addPlant(soybeanSeed)
+                    break;
+                    
                 case 'Sunflower':
                     const sunflowerSeed = createSunflower()
                     addPlant(sunflowerSeed)
+                    break;
+
                 case 'Wheat':
                     const wheatSeed = createWheat()
                     addPlant(wheatSeed)
+                    break;
+                    
             }
+            //addPlant(seed)
         }
         // testing loop of arrays
         // console.log(plan[i]);
