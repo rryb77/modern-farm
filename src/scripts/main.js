@@ -12,23 +12,23 @@ import { createPlan } from './plan.js'
 
 
 // import functions from field.js
-import { addPlant } from './field.js'
+// import { addPlant } from './field.js'
 import { usePlants } from './field.js'
 
 // import functions from tractor.js
 import { plantSeeds } from './tractor.js'
-
-
+import { harvestPlants } from './harvester.js'
 
 // call functions
-createPlan()
 const yearlyPlan = createPlan()
 
 // tractor.js
 plantSeeds(yearlyPlan)
-const test = usePlants()
-console.log(test)
+const plantedSeeds = usePlants()
+console.log('Testing plantSeeds from tractor.js', plantedSeeds)
 
+const testHarvest = harvestPlants(plantedSeeds)
+console.log('Looking for harvest array from harvester.js', testHarvest)
 // testing seed functions via console
 // const asparagusSeed = createAsparagus()
 // console.log(asparagusSeed)
