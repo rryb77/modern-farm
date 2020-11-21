@@ -3,6 +3,6 @@
  */
 export const Food = (food) => {
     return `
-    '<section class="plant">'${food.type}'</section>'
+    <section class="plant">${food.type}</section>
     `
   }
