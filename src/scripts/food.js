@@ -1,8 +1,6 @@
-/**
- *  Fish which renders individual fish objects as HTML
- */
 export const Food = (food) => {
-    return `
+   
+  return `
     <section class="plant">${food.type}</section>
     `
   }
