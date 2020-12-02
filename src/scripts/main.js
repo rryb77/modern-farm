@@ -1,6 +1,7 @@
 console.log("Welcome to the main module")
 // import function from plan.js
 import { createPlan } from './plan.js'
+import {countHarvest } from './count.js'
 
 // import functions from field.js
 import { usePlants } from './field.js'
@@ -22,5 +23,8 @@ console.log('Testing plantSeeds from tractor.js', plantedSeeds)
 // testing harvester.js
 const theHarvest = harvestPlants(plantedSeeds)
 console.log('Looking for harvest array from harvester.js', theHarvest)
-
+//count function
+countHarvest(theHarvest)
 Catalog(theHarvest)
+// const viewIt = countHarvest(theHarvest)
+// console.log(viewIt)
