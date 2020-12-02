@@ -8,13 +8,11 @@ export const harvestPlants = (plants) => {
        
         // Iterate the array of growing plants. On each plant, get the value of the output property.
         // Add that many of the plant objects to the array that the function returns. For example, if the current plant is a peanut object with an output of 2...
+        
 
         if (plant.type === 'Corn') {
             let cornHalf = plant.output / 2
             for (let i = 0; i < cornHalf; i++) {
-                plantIDCount += 1;
-                plant.id = plantIDCount
-                console.log(plantIDCount)
                 harvestedArray.push(plant);
             }
         } else {
@@ -24,6 +22,7 @@ export const harvestPlants = (plants) => {
         }
         
     }
+
 
     
     // Compare and sort the array alphabetically
